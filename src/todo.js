@@ -106,7 +106,7 @@ const Todo = () => {
 
     // Delete all the completed list from original list
     const onComplete = () => {
-        const finalData = list.filter(item => {
+        const finalData = filterlist.filter(item => {
             if (!item.check) {
                 return item
             }
@@ -189,7 +189,7 @@ const Todo = () => {
 
                                     <a className="anchor_tag"> <del><input className="anchor_inputBox" type="text" value={item.text} onChange={(e) => editListText(e, id)} /></del></a>
                                     :
-                                    <span ><input className="anchor_inputBox" type="text" value={item.text} onChange={(e) => editListText(e, id)} /></span>
+                                    <span ><input className="span_inputBox" type="text" value={item.text} onChange={(e) => editListText(e, id)} /></span>
 
                             }
 

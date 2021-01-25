@@ -5,6 +5,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+    
 }
 
 code {
@@ -12,20 +13,23 @@ code {
     monospace;
 }
 
+
 .mainDiv {
   width: 550px;
   background-color: white;
-  border: 1px solid darkgrey;
+  border: 0.2px solid lightgray;
   border-bottom: 0px;
-  border-left: 0px;
-  border-right: 0px;
+  border-left: 1px;
+  border-right: 1px;
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2), 0 8px 0 -3px #f6f6f6,
     0 9px 1px -3px rgba(0, 0, 0, 0.2), 0 16px 0 -6px #f6f6f6,
     0 17px 2px -6px rgba(0, 0, 0, 0.2);
+
 }
 
 .main_subDiv {
   display: flex;
+  height: 45px;
 }
 
 .form_button {
@@ -36,6 +40,8 @@ code {
 
 .form_Div {
   width: 100%;
+  height: 100%;
+  margin: 2px 0px;
   border-bottom: 0px;
   border-left: 0px;
   border-right: 0px;
@@ -51,25 +57,23 @@ code {
 }
 
 .list_div {
-  height: 35px;
-  border: 1px solid grey;
+  height: 40px;
+  border: 0.2px solid lightgray;
   border-bottom: 0px;
-  border-left: 0px;
-  border-right: 0px;
+  border-left: 1px;
+  border-right: 1px;
   text-align: left;
   padding: 5px 2px;
   box-sizing: border-box;
   width: 100%;
+  margin-left: 5px;
 }
 
 .list_div:hover .button_list {
   display: block;
 }
 
-.input_checkBox:checked {
-  color: green;
-  border-radius: 100%;
-}
+
 
 .anchor_tag {
   opacity: 0.2;
@@ -77,8 +81,18 @@ code {
 
 .anchor_inputBox {
   border: none;
+  text-decoration: line-through;
   box-sizing: border-box;
-  width: 90%;
+  margin: 0px 0px 0px 5px;
+  width: 88%;
+  height: 100%;
+}
+
+.span_inputBox {
+  border: none;
+  box-sizing: border-box;
+  margin: 0px 0px 0px 5px;
+  width: 88%;
   height: 100%;
 }
 
@@ -89,6 +103,8 @@ code {
   background-color: white;
   border: none;
   display: none;
+  margin: 0px 10px 0px 0px;
+  /* padding: 5px; */
 }
 
 .button_list:hover {
@@ -96,7 +112,7 @@ code {
 }
 
 .footerDiv {
-  border: 1px solid grey;
+  border: 0.2px solid lightgray;
   border-bottom: 0px;
   border-left: 0px;
   border-right: 0px;

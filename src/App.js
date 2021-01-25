@@ -4,7 +4,7 @@ import Todo from './todo';
 function App() {
   return (
     <div className="App">
-      <div> 
+      <div style={{height: 'auto'}}> 
         <h1 className="heading"> todos </h1>
         <Todo />
       </div>
