@@ -30,14 +30,15 @@ const Todo = () => {
 
 
     const showResult = e => {
-        if (text.length > 0) {
+        
+        if (text.trim().length > 0) {
 
-            setList([...list, { text: text, check: false, id: Math.random().toString() }])
+            setList([...list, { text: text.trim(), check: false, id: Math.random().toString() }])
 
             setFilterList([...list, { text: text, check: false, id: Math.random().toString() }])
         }
         else {
-            alert('error!', 'List name cannot be empty', [
+            alert('List can\'t\ be empty', 'List name cannot be empty', [
                 { text: 'OK', onPress: () => console.log('alert closed') }
             ]);
         }
@@ -131,7 +132,7 @@ const Todo = () => {
     const editListText = (e, id) => {
         // console.log(e.target.value)
         e.preventDefault();
-        setText(e.target.value)
+        // setText(e.target.value)
         //console.log(e.target.value,id)
         const RemovedList = list.map((item, i) => {
             if (i === id) {
