@@ -1,13 +1,126 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+.mainDiv {
+  width: 550px;
+  background-color: white;
+  border: 1px solid darkgrey;
+  border-bottom: 0px;
+  border-left: 0px;
+  border-right: 0px;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2), 0 8px 0 -3px #f6f6f6,
+    0 9px 1px -3px rgba(0, 0, 0, 0.2), 0 16px 0 -6px #f6f6f6,
+    0 17px 2px -6px rgba(0, 0, 0, 0.2);
+}
+
+.main_subDiv {
+  display: flex;
+}
+
+.form_button {
+  margin: 10px 2px 2px 2px;
+  opacity: 0.5;
+  border-right: 0px;
+}
+
+.form_Div {
+  width: 100%;
+  border-bottom: 0px;
+  border-left: 0px;
+  border-right: 0px;
+}
+
+.input_field {
+  font-size: 20px;
+  padding: 2px 2px 2px 5px;
+  height: 40px;
+  box-sizing: border-box;
+  width: 100%;
+  border: 0px;
+}
+
+.list_div {
+  height: 35px;
+  border: 1px solid grey;
+  border-bottom: 0px;
+  border-left: 0px;
+  border-right: 0px;
+  text-align: left;
+  padding: 5px 2px;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+.list_div:hover .button_list {
+  display: block;
+}
+
+.input_checkBox:checked {
+  color: green;
+  border-radius: 100%;
+}
+
+.anchor_tag {
+  opacity: 0.2;
+}
+
+.anchor_inputBox {
+  border: none;
+  box-sizing: border-box;
+  width: 90%;
+  height: 100%;
+}
+
+.button_list {
+  float: right;
+  font-size: 10px;
+  color: #db9393;
+  background-color: white;
+  border: none;
+  display: none;
+}
+
+.button_list:hover {
+  color: maroon;
+}
+
+.footerDiv {
+  border: 1px solid grey;
+  border-bottom: 0px;
+  border-left: 0px;
+  border-right: 0px;
+  opacity: 0.8;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+.footerspan {
+  margin: 0px 45px 5px 15px;
+}
+button:focus {
+  background: white;
+}
+
+.footerBtn_1 {
+  background-color: white;
+  border: none;
+  margin: 5px;
+}
+
+.footerBtn_2 {
+  background-color: white;
+  border: none;
+  margin: 5px 15px 5px 45px;
+  float: right;
 }
